@@ -55,13 +55,6 @@ class Poligono:
         res = Punto()
         # ...
         self.centroide = res
-        print("Centro de masas determinado: " + str(res))
-
-    # Mueve el polígono en el espacio.
-    def mover(self):
-        print("Moviendo el polígono en el espacio...")
-        # ...
-        print("Polígono trasladado a la nueva posición: " + str_puntos(str_separador=", "))
 
     # Imprime los puntos del polígono.
     def str_puntos(self, str_inicio = "\n", str_separador = "\n"):
@@ -71,6 +64,12 @@ class Poligono:
             res = res + str(punto) + str_separador
 
         return res[:len(res)-len(str_separador)]
+
+    # Mueve el polígono en el espacio.
+    def mover(self):
+        print("Moviendo el polígono en el espacio...")
+        # ...
+        print("Polígono trasladado a la nueva posición: " + str_puntos(str_separador=", "))
 
     # Devuelve la representación textual del polígono, es decir, sus datos.
     def __str__(self):
