@@ -12,7 +12,7 @@ class Poligono:
         self.set_centroide()
 
     # Obtiene los puntos definidos para el polígono.
-    def get_puntos(self): 
+    def get_puntos(self):
         return self.puntos
 
     # Asigna nuevos puntos al polígono y recalcula los valores afectados.
@@ -24,7 +24,7 @@ class Poligono:
         self.set_centroide()
 
     # Obtiene la convexidad del polígono. Si aún no está definida, la calcula.
-    def get_convexidad(self): 
+    def get_convexidad(self):
         return self.convexidad
 
     # Calcula y asigna si el polígono es cóncavo o convexo.
@@ -34,8 +34,8 @@ class Poligono:
         # ...
         self.convexidad = res
 
-    # Obtiene el area del polígono. Si aún no está definida, la calcula.
-    def get_area(self): 
+    # Obtiene el área del polígono. Si aún no está definida, la calcula.
+    def get_area(self):
         return self.area
 
     # Calcula y asigna el área total del polígono.
@@ -46,7 +46,7 @@ class Poligono:
         self.area = res
 
     # Obtiene el centro de masas del polígono. Si aún no está definido, lo calcula.
-    def get_centroide(self): 
+    def get_centroide(self):
         return self.centroide
 
     # Calcula y asigna el centro de masas del polígono.
@@ -69,7 +69,6 @@ class Poligono:
     def mover(self):
         print("Moviendo el polígono en el espacio...")
         # ...
-        print("Polígono trasladado a la nueva posición: " + str_puntos(str_separador=", "))
 
     # Devuelve la representación textual del polígono, es decir, sus datos.
     def __str__(self):
